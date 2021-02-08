@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        body {
+            background-image: url("img/img6.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img-fluid {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand logo_h" href="index.html"
+                            style="color:snow;font-size:45px; font-family: 'Potta One';">T S F
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"
+                                        style="font-family:'Ubuntu'; color:burlywood; font-size: 1.8rem;"
+                                        onmouseover="this.style.color='green'"
+                                        onmouseout="this.style.color='orange'">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link"
+                                        style="font-family:'Ubuntu'; color:burlywood; font-size: 1.8rem; cursor: pointer;"
+                                        onmouseout="this.style.color='green'"
+                                        onmouseover="this.style.color='orange'">About
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacthere.html"
+                                        style="font-family:'Ubuntu'; color:burlywood; font-size: 1.8rem;"
+                                        onmouseover="this.style.color='green'"
+                                        onmouseout="this.style.color='orange'">Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="about_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="single_about row">
+                    <div class="col-lg-6 col-md-12 text-center about_left">
+                        <div class="about_thumb">
+                            <img src="img/inspire.png" class="img-fluid" style="width:100%" alt="">
+                            <img src="img/inovate.png" class="img-fluid" style="width:100%" alt="">
+                            <img src="img/integrate.png" class="img-fluid" style="width:100%" alt="">
+                            <img src="img/grip.jpg" class="img-fluid" style="width:100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about_right" style="border-radius: 0px 100px;">
+                        <div class="about_content">
+                            <h2 style="line-height: 1; font-family: 'Ubuntu', sans-serif;">
+                                Our Vision & Mission
+                            </h2>
+                            <p>
+                                <strong> Inspire </strong> <br>
+                                To inspire, motivate and encourage students to learn, create and help build a better
+                                society.
+                            </p>
+                            <p>
+                                <strong> Innovate </strong> <br>
+                                To teach new ways of thinking, to innovate and solve the problems on their own.
+                            </p>
+                            <p><strong> Integrate </strong> <br>
+                                To let the students integrate, and help each other, learn from each other and do well
+                                together.
+                            </p>
+                            <a href="https://www.thesparksfoundationsingapore.org/" target="_blank"
+                                class="primary_btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("img-fluid");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+</body>
+
+</html>
